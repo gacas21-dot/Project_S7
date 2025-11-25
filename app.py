@@ -43,15 +43,15 @@ if scatter_button:
     st.write(f"Correlación: {correlation:.3f}")
 
 # Top 10 marcas
-brands_button = st.button("Show Top 10 Brands")
+brands_button = st.button("Show Top 10 Models")
 if brands_button:
-    st.write('### 🏆 Top 10 Marcas Más Populares')
+    st.write('### 🏆 Top 10 Modelos Más Populares')
 
     # Obtener las 10 marcas más populares
     top_brands = data['model'].value_counts().head(10)
     # Crear gráfico de barras
     fig = go.Figure(data=[go.Bar(x=top_brands.index, y=top_brands.values)])
-    fig.update_layout(title='Top 10 Marcas',
-                      xaxis_title='Marca',
+    fig.update_layout(title='Top 10 Modelos',
+                      xaxis_title='Modelo',
                       yaxis_title='Cantidad de Vehículos')
     st.plotly_chart(fig, use_container_width=True)
