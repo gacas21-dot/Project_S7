@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 # Leer los datos del archivo CSV
-data = pd.read_csv('../vehicles_us.csv')
+data = pd.read_csv('vehicles_us.csv')
 
 # Crear una aplicación simple con Streamlit
 st.header("🚗 Vehicle Data Dashboard")
