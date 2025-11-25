@@ -43,8 +43,8 @@ if scatter_button:
     st.write(f"Correlación: {correlation:.3f}")
 
 # Top 10 marcas
-brands_button = st.button("Show Top 10 Models")
-if brands_button:
+brands_checkbox = st.checkbox("Show Top 10 Models")
+if brands_checkbox:
     st.write('### 🏆 Top 10 Modelos Más Populares')
 
     # Obtener las 10 marcas más populares
