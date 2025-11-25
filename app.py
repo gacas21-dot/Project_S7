@@ -48,7 +48,7 @@ if brands_button:
     st.write('### 🏆 Top 10 Marcas Más Populares')
 
     # Obtener las 10 marcas más populares
-    top_brands = data['manufacturer'].value_counts().head(10)
+    top_brands = data['model'].value_counts().head(10)
     # Crear gráfico de barras
     fig = go.Figure(data=[go.Bar(x=top_brands.index, y=top_brands.values)])
     fig.update_layout(title='Top 10 Marcas',
