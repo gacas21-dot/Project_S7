@@ -1,4 +1,14 @@
 # Project_S7
-Project Sprint 7
+## Herramientas de desarrollo de software
 
-Este proyeto es para crear una aplicación que mediante botones permita crear gráficos del Dataset
+Esta aplicación es un dashboard interactivo para el análisis de datos de vehículos_us.csv
+
+## Funcionalidades
+- Visualizar datos
+- Generar gráficos
+- Analizar tendencias
+
+## Tecnologías utilizadas
+- Streamlit
+- Plotly
+- Pandas
